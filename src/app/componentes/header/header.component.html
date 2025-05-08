@@ -1,0 +1,83 @@
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/logo.jpg" alt="" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="catalogo">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Compra</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Arracadas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Chicas</a></li>
+                        <li><a class="dropdown-item" href="#">Medianas</a></li>
+                        <li><a class="dropdown-item" href="#">Grandes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+                </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary buscar" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav> -->
+
+
+
+
+<!-- /***********************************************************************/ -->
+
+
+<header>
+    <div class="header-container">
+        <div class="logo-titulo">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="/logo.jpg" alt="" class="logo" routerLink="catalogo">
+                </a>
+            </div>
+            <div>
+                <ul class="menu">
+                    <li><a class="nav-link" routerLink="catalogo">Mel Accesorios</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a class="nav-link" routerLink="catalogo">Catálogo</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Arracadas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Chicas</a></li>
+                        <li><a class="dropdown-item" href="#">Medianas</a></li>
+                        <li><a class="dropdown-item" href="#">Grandes</a></li>
+                    </ul>
+                </li>
+
+                <!-- Contador de carrito -->
+                <li><a routerLink="cart"> <span class="contador">{{counter()}}</span> <i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</header>

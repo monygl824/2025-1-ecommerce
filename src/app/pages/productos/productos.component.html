@@ -1,0 +1,15 @@
+<div class="row row-cols-lg-5 body"> 
+    @for (a of misArracadas; track a) {
+        <div class="col">
+            <div class="card mb-3">
+                <img src="{{a.img}}" alt="" class="imagenes-arracadas">
+                <div class="card-body">
+                    <h5 class="card-title centrar">{{a.titulo}}</h5>
+                    <p class="card-text centrar">{{a.descripcion}}</p>
+                    <p class="card-text centrar precio">{{a.precio |currency}}</p>
+                    <button type="button" class="btn btn-outline-secondary boton" (click)="addToCart(a)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,18 @@
+.body{
+    margin-inline: 400px;
+}
+
+.resumen {
+    margin-inline: 400px;
+    padding: 50px;
+}
+
+.total {
+    font-size: 20px;
+    color: crimson;
+    font-weight: bold;
+}
+
+.total span {
+    color: black;
+}

@@ -1,0 +1,27 @@
+.imagenes-arracadas{
+    width: 200px;
+}
+
+.body{
+    margin: 100px;
+}
+
+p {
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.precio {
+    color:rgb(255, 118, 152);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.boton{
+    margin-inline: 10px;
+}
+

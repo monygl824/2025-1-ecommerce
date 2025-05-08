@@ -1,0 +1,77 @@
+.logo {
+    width: 80px;
+}
+
+* {
+    background-color: #f7eedd;
+}
+
+.buscar {
+    color:black;
+}
+
+
+/****************************************/
+
+
+.contador {
+    color: blue;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+a:hover{
+    font-weight: bold;;
+}
+
+header {
+    padding: 20px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+h1 {
+    color: #564b3e;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#logo-title {
+    font-weight: bold;
+}
+
+.menu {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: 1px solid #c9c4b9;
+    border-radius: 15px;
+}
+
+.menu li {
+    padding: 0 20px 0 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #564b3e;
+}
+
+.logo-titulo{
+    display: flex;
+}

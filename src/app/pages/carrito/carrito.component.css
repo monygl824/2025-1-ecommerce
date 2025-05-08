@@ -1,0 +1,30 @@
+.pago {
+    margin-inline: 500px;
+}
+
+img {
+    width: 100px;
+}
+
+.info  {
+    display: flex;
+    margin-top: 10px;
+}
+
+.info img {
+    margin-right: 10px;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+.total{
+    font-weight: bold;
+    color: brown;
+}
+
+
+
+
+

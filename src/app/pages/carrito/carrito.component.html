@@ -1,0 +1,36 @@
+<div class="container">
+    <div>
+        <h1 class="text-align:center;">Carrito de compras</h1>
+        <div class="">
+            @for (arracadas of cart; track arracadas) {
+            <div class="info ">
+                <img [src]="arracadas.img" [alt]="arracadas.titulo">
+                <div class="">
+                    <p class="title">{{arracadas.titulo}}
+                    </p>
+                    <p class="texto precio">{{arracadas.precio | currency}}</p>
+                    <p>Cantidad: {{arracadas.cantidad}}</p>
+                    <!-- <div class="menu">
+                        <input type="button" class="btn btn-secondary" (click)="sumaArracadas()" value="+">
+                        <p>{{arracada}}</p>
+                        <input type="button" class="btn btn-secondary" (click)="restaArracadas()" value="-">
+                    </div> -->
+                </div>
+            </div>
+            }
+            <div class="row total">
+                <div class="col-12">
+                    <p> Total: {{sumar() | currency}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @if (cart.length==0) {
+    <div class="not-found">Aún no has añadido nada a tu carrito :(</div>
+    }
+</div>
+
+<div class="pago">
+    <a type="button" class="btn btn-outline-secondary" (click)="handleClick()">Pagar</a>
+</div>

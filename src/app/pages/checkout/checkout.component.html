@@ -1,0 +1,77 @@
+<div class="body">
+    <form class="row g-3" [formGroup]="formulario" (ngSubmit)="guardar()">
+        <h2>Introduce tus datos</h2>
+        <div class="row g-3">
+            <div class="col">
+                <label for="nombres" class="form-label">Nombres</label>
+                <input formControlName="nombres" type="text" class="form-control" placeholder="" aria-label="nombres"
+                    id="nombres">
+            </div>
+            <div class="col">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input formControlName="apellidos" type="text" class="form-control" placeholder=""
+                    aria-label="apellidos" id="apellidos">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="telefono" class="form-label">Número de teléfono</label>
+            <input formControlName="telefono" type="number" class="form-control" id="telefono">
+        </div>
+        <div class="col-md-6">
+            <label for="quien-recibe" class="form-label">¿Quién recibe?</label>
+            <input formControlName="quienRecibe" type="text" class="form-control" id="quien-recibe">
+        </div>
+        <div class="col-12">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input formControlName="direccion" type="text" class="form-control" id="direccion"
+                placeholder="Calle y número">
+        </div>
+        <div class="col-md-6">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input formControlName="ciudad" type="text" class="form-control" id="ciudad">
+        </div>
+        <div class="col-md-4">
+            <label formControlName="estado" for="estado" class="form-label">Estado</label>
+            <select id="estado" class="form-select">
+                <option selected>Estado...</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Zacatecas">Zacatecas</option>
+                <option value="Jalisco">Jalisco</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="cp" class="form-label">CP</label>
+            <input formControlName="cp" type="text" class="form-control" id="cp">
+        </div>
+        <label for="metodo-pago" class="form-label">Método de pago</label>
+        <select formControlName="metodoPago" id="metodos-pago" class="form-select">
+            <option selected>...</option>
+            <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+            <option value="Tarjeta de débito">Tarjeta de débito</option>
+            <option value="Depósito">Depósito</option>
+        </select>
+        <div class="col-12">
+            <div class="form-check">
+                <input formControlName="aceptaTerminos" class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    He leído y acepto los <a href="">Términos y condiciones</a>
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Pagar</button>
+        </div>
+    </form>
+</div>
+
+<div class="resumen">
+    <h4>Resumen de la compra</h4>
+    <br>
+    <p><strong>Nombre:</strong> {{ resumenCompra.nombres }} {{ resumenCompra.apellidos }}</p>
+    <p><strong>Teléfono:</strong> {{ resumenCompra.telefono }}</p>
+    <p><strong>¿Quién recibe?</strong> {{ resumenCompra.quienRecibe }}</p>
+    <p><strong>Dirección:</strong> {{ resumenCompra.direccion }}, {{ resumenCompra.ciudad }}</p>
+    <p><strong>Código Postal:</strong> {{ resumenCompra.cp }}</p>
+    <p><strong>Método de pago:</strong> {{ resumenCompra.metodoPago }}</p>
+    <p class="total"><span>Total a pagar: </span> </p>
+</div>
